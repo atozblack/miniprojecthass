@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+
+    <header>
+        <h1>
+            <span >Welcome To Katik</span>
+        </h1>
+            <span>Hai Sobat Selamat datang di katik :]</span>
+            <h6>
+            <span>Sebuah Web Apps Sederhana untuk menghitung nilai luas dan keliling</span>
+            </h6>
+        
+    </header>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+   
+<button class="tablink" onclick="openPage('Luassegitiga', this, 'red')">Luas Segitiga</button>
+<button class="tablink" onclick="openPage('Kelilingsegitiga', this, 'green')" id="defaultOpen">Keliling Segitiga</button>
+<button class="tablink" onclick="openPage('Luasjajargenjang', this, 'blue')">Luas JajarGen</button>
+<button class="tablink" onclick="openPage('Kelilingjajargenjang', this, 'orange')">Keliling JajarGen</button>
+<main>
+<section>
+<div id="Luassegitiga" class="tabcontent">
+  <h3>Menghitung Luas Segitiga</h3>
+  <div id="segitiga">
+    <img src="images/triangle.png" alt="segitiga">
+    <h3>Rumus Luas Segitiga:</h3>
+    <p>Luas (L) = 0.5 X a X t </p>
+    <h4>Dimana:</h4>
+    <p>a = panjang alas </p>
+    <p>t = tinggi </p>
+    <div>
+        <input id="alas" type="text" placeholder="a">
+        <input id="tinggi" type="text" placeholder="t">
+    </div>
+    <button id="btn-calculate-triangle">Hitung</button>
+</div>
+<div>
+    <h3 >Hasil Hitungan :
+    </h3>
+    <div>
+        <ol id="hasil-luas-segitiga">
+        </ol>
+    </div>
+</div>
+<div>
+    <button onclick="window.location.href = 'index.html'">RESET</button>
+</div>
+</div>
+
+<div id="Kelilingsegitiga" class="tabcontent">
+  <h3>Menghitung Keliling Segitiga</h3>
+  <div id="segitiga">
+    <img src="images/triangle.png" alt="segitiga">
+    <h3>Rumus Keliling Segitiga:</h3>
+    <p>Keliling (K) = a + b + c </p>
+    <h4>Dimana:</h4>
+    <p>a = sisi a </p>
+    <p>b = sisi b </p>
+    <p>c = sisi c </p>
+    <div>
+        <input id="sisia" type="text" placeholder="a">
+        <input id="sisib" type="text" placeholder="b">
+        <input id="sisic" type="text" placeholder="c">
+    </div>
+    <button id="btn-calculate-triangleb">Hitung</button>
+</div>
+<div>
+    <h3 >Hasil Hitungan :
+    </h3>
+    <div>
+        <ol id="hasil-keliling-segitiga">
+        </ol>
+    </div>
+</div>
+<div>
+    <button onclick="window.location.href = 'index.html'">RESET</button>
+</div>
+</div>
+
+<div id="Luasjajargenjang" class="tabcontent">
+  <h3>Menghitung Luas Jajar Genjang</h3>
+  <div id="jajargenjang">
+    <img src="images/parallelogram.png" alt="jajargenjang">
+    <h3>Rumus Luas JajarGenjang:</h3>
+    <p>Luas (L) = a X t </p>
+    <h4>Dimana:</h4>
+    <p>a =  alas </p>
+    <p>t = tinggi </p>
+    <div>
+        <input id="alasj" type="text" placeholder="a">   
+        <input id="tinggij" type="text" placeholder="t">
+    </div>
+    <button id="btn-calculate-parallelogram">Hitung</button>
+</div>
+<div>
+    <h3 >Hasil Hitungan :
+    </h3>
+    <div>
+        <ol id="hasil-luas-jajar">
+        </ol>
+    </div>
+</div>
+<div>
+    <button onclick="window.location.href = 'index.html'">RESET</button>
+</div>
+</div>
+
+<div id="Kelilingjajargenjang" class="tabcontent">
+    <h3>Menghitung Keliling Jajar Genjang</h3>
+    <div id="keljajargenjang">
+        <img src="images/parallelogram.png" alt="keljajargenjang">
+        <h3>Rumus Keliling Jajar Genjang:</h3>
+        <p>Keliling (K) = 2 X (a+b) </p>
+        <h4>Dimana:</h4>
+        <p>a =  alas </p>
+        <p>b = sisi miring </p>
+        <div>
+            <input id="alaskj" type="text" placeholder="a">
+            <input id="sisimiring" type="text" placeholder="b">
+        </div>
+        <button id="btn-calculate-parallelogramkj">Hitung</button>
+        <div>
+            <h3 >Hasil Hitungan :
+            </h3>
+            <div>
+                <ol id="hasil-keliling-jajar">
+                </ol>
+            </div>
+        </div>
+        <div>
+            <button onclick="window.location.href = 'index.html'">RESET</button>
+        </div>
+</div>
+
+
+</section>
+</main>
+
+<script src="js/utilities.js"></script>
+<script src="js/segitiga.js"></script>
+<script src="js/jajargenjang.js"></script>
+
+</body>
+    <footer>
+    <p>Created by Hasian Sugar Ishak</p>
+    <p><a href="mailto:hass.sugar@gmail.com">hass.sugar@gmail.com</a></p>
+  </footer>
+</html> 
